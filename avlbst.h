@@ -188,6 +188,7 @@ void AVLTree<Key, Value>::insert (const std::pair<const Key, Value> &new_item)
         }
         else {
           curr->setValue(new_item.second);
+          delete toInsert;
           return;
         }
     }
